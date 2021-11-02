@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:consolas;
+}
+
+section{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	z-index:10000000000;
+	pointer-events:none;
+}
+
+section .side{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(bg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	filter: invert(2);
+}
+
+section .side#side1{
+	clip-path: polygon(-1% -1%, 48% 1%, 31% 13%, 62% 20%, 31% 30%, 60% 39%, 30% 48%, 80% 59%, 31% 66%, 55% 71%, 25% 81%, 68% 89%, 49% 102%, 0% 101%);
+}
+
+section .side#side2{
+	clip-path: polygon(100% 1%, 47% 1%, 30% 13%, 61% 20%, 30% 30%, 59% 39%, 29% 48%, 73% 58%, 30% 66%, 54% 71%, 24% 81%, 67% 89%, 48% 99%, 100% 100%, 100% 100%);
+}
+
+.contentBx{
+	background:#000;
+	color:#fff;
+	padding:100px;
+	padding-top:150vh;
+}
+
+.contentBx h2{
+	position: relative;
+	font-size:4em;
+}
+
+.contentBx p{
+	position: relative;
+	font-size:1.5em;
+}

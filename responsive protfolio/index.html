@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Responsive Protfolio</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<section class="banner" id="sec">
+			<header>
+				<a class="logo" href="#">Logo</a>
+				<div id="toggle" onclick="toggle();"></div>
+			</header>
+			<div style="padding-left:5%;" class="content">
+				<h2>Hello World<br><span>I'm Md Zahidul Islam</span></h2>
+				<p>
+					Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book
+				</p>
+				<a onclick="showinf();" href="#">Know More</a>
+			</div>
+			
+			<ul class="sci">
+				<li><a href="#"><img src="facebook.png"></a></li>
+				<li><a href="#"><img src="linkedin.png"></a></li>
+				<li><a href="#"><img src="twitter.png"></a></li>
+			</ul>
+			
+		</section>
+		
+		<div id="navigation">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Protfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+			
+		<div id="popup">
+			<div class="shoinf">
+				<h2>Hello World<br><span>I'm Md Zahidul Islam</span></h2>
+					<p>
+						Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book
+						<br/>
+						Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book
+					</p>
+					<a onclick="showinf();" href="#">Close</a>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	overflow:hidden;
+	background:#000;
+	height:100vh;
+}
+
+span{
+	position:absolute;
+	background:url(heart.png);
+	pointer-event:none;
+	transform:translate(-50%,-50%);
+	animation: animat 2s linear infinite;
+	width:100px;
+	height:100px;
+	background-size:cover;
+}
+
+@keyframes animat{
+	0%{
+		transform:translate(-50%,-50%);
+		opacity:1;
+		filter:hue-rotate(0deg);
+	}100%{
+		transform:translate(-50%,-1000%);
+		opacity:0;
+		filter:hue-rotate(720deg);
+	}
+}

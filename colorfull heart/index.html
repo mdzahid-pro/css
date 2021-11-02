@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Ek Balti Valobasha</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	
+	
+	<script type="text/javascript">
+		
+		document.addEventListener("mousemove",function(e){
+			var body = document.querySelector("body");
+			var heart = document.createElement("span");
+			var y = e.offsetY;
+			var x = e.offsetX;
+			heart.style.left = x+'px';
+			heart.style.top = y+'px';
+			var size = Math.random()*100;
+			heart.style.width= 10 + size + 'px';
+			heart.style.height= 10 + size + 'px';
+			body.appendChild(heart);
+			
+			setTimeout(function(){
+				heart.remove();
+			},2000);
+		});
+	</script>
+</body>
+</html>
